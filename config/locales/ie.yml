@@ -704,6 +704,7 @@ ie:
         manage_users: Gerer usatores
         manage_users_description: Permisse que usatores vide detallies de altri usatores e fa actiones de moderation contra les
         manage_webhooks: Gerer Webcrocs
+        manage_webhooks_description: Permisse que usatores configura webcrocs por evenimentes administrativ
         view_audit_log: Vider li Jurnale de Audit
         view_audit_log_description: Permisse que usatores vide li historie de administrativ actiones sur li servitor
         view_dashboard: Vider Panel de Control
@@ -714,6 +715,7 @@ ie:
     rules:
       add_new: Adjunter un regule
       delete: Deleter
+      description_html: Benque li pluparte di que ili ha leet e acorda con li termines de servicie, presc nequi perlee les til quande un problema eveni. <strong>Tu posse facilitar li perletura del regules de tui servitor per dar les sur un liste de plat balle-punctus.</strong> Li índividual regules posse esser curt e simplic, ma mem un liste de micri punctus posse esser tro exigent por li letor si it es tro grand.
       edit: Redacter regul
       empty: Ancor null regules de servitor ha esset definit.
       title: Regules del servitor
@@ -724,6 +726,11 @@ ie:
       appearance:
         preamble: Customisar li interfacie web de Mastodon.
         title: Aspecte
+      branding:
+        title: Marca
+      captcha_enabled:
+        desc_html: To ci usa extern scrites de hCaptcha, quel posse esser ínquietant pro rasones de securitá e privatie. In plu, <strong>it posse far li processu de registration mult plu desfacil (particularimen por tis con deshabilitás)</strong>. Pro ti rasones, ples considerar alternativ mesuras, tales quam registration per aprobation o invitation.
+        title: Exige que nov usatores solue un CAPTCHA por confirmar lor conto
       content_retention:
         title: Retention de contenete
       discovery:
@@ -1374,6 +1381,7 @@ ie:
   media_attachments:
     validations:
       images_and_video: On ne posse atachar un video a un posta quel ja contene images
+      too_many: Ne posse atachar plu quam 4 files
   migrations:
     acct: Translocat a
     cancel: Anullar redirection
@@ -1443,6 +1451,7 @@ ie:
   number:
     human:
       decimal_units:
+        format: "%n%u"
         units:
           billion: B
           million: M
@@ -1800,6 +1809,8 @@ ie:
       success: Tui clave de securitá esset adjuntet con successe.
     delete: Deleter
     delete_confirmation: Vole tu vermen deleter ti-ci clave de securitá?
+    destroy:
+      success: Tui clave de securitá esset successosimen deletet.
     invalid_credential: Ínvalid clave de securitá
     not_enabled: Tu ancor ne ha possibilisat WebAuthn
     not_supported: Ti-ci navigator ne subtene claves de securitá
